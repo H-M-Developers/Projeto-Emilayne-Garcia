@@ -15,11 +15,10 @@ body {
 }
 
 header {
-    background: linear-gradient(
-        to right,
-        #000000 10%,
-        #3f3f3f 100%
-    ); /* Degradê do preto para um cinza escuro */
+    background: linear-gradient(to right,
+            #000000 10%,
+            #3f3f3f 100%);
+    /* Degradê do preto para um cinza escuro */
 
     & .section-header {
         & .content-header {
@@ -90,11 +89,10 @@ main {
         justify-content: space-between;
         align-items: center;
 
-        background: linear-gradient(
-            to right,
-            #000000 10%,
-            #3f3f3f 100%
-        ); /* Degradê do preto para um cinza escuro */
+        background: linear-gradient(to right,
+                #000000 10%,
+                #3f3f3f 100%);
+        /* Degradê do preto para um cinza escuro */
 
         & .content-banner {
             display: flex;
@@ -135,9 +133,65 @@ main {
     }
 }
 
+footer {
+    background-color: #151515;
+
+    & .section-footer {
+
+        & .content-footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & .content-01 {
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                border-bottom: 2px solid;
+                border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #e6e6e6, rgba(60, 74, 83, 0)) 1;
+
+                & .redes {
+                    max-width: 200px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    color: #fff;
+
+                    & a {
+                        color: #fff;
+                        width: 80px;
+
+                        & img {
+                            color: #fff;
+                            width: 80px;
+                        }
+                    }
+                }
+
+                & p {
+                    font-size: 15px;
+                    margin-top: 10px;
+                    color: #fff;
+                }
+            }
+
+            & .content-01 h5,
+            p {
+                color: #fff;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
 .test {
-    background-color: #fff; /* Define a cor de fundo como branco */
-    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    background-color: #fff;
+    /* Define a cor de fundo como branco */
+    height: 100vh;
+    /* Define a altura como 100% da altura da janela de visualização */
 }
 
 .btn-whats {
@@ -168,7 +222,10 @@ main {
 }
 
 .btn-whats:hover {
-    background-color: #128c7e; /* Cor ao passar o mouse */
-    transform: scale(1.2); /* Aumenta o tamanho em 20% */
-    transition: transform 0.3s, background-color 0.3s; /* Suaviza a transição */
+    background-color: #128c7e;
+    /* Cor ao passar o mouse */
+    transform: scale(1.2);
+    /* Aumenta o tamanho em 20% */
+    transition: transform 0.3s, background-color 0.3s;
+    /* Suaviza a transição */
 }
