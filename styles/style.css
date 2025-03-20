@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Standup W01 Caps Regular", sans-serif;
     background-color: #fff;
 }
 
@@ -14,25 +15,27 @@ body {
 }
 
 header {
-    background-color: #333333;
+    background: linear-gradient(
+        to right,
+        #000000 10%,
+        #3f3f3f 100%
+    ); /* Degradê do preto para um cinza escuro */
 
     & .section-header {
-
         & .content-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             & .content-header-left {
-
                 & img {
-                    width: 180px;
-                    height: 150px;
+                    width: 190px;
+                    height: 120px;
+                    object-fit: contain;
                 }
             }
 
             & .content-header-right {
-
                 & nav ul {
                     list-style-type: none;
                     display: flex;
@@ -45,9 +48,10 @@ header {
                             color: #fff;
                             text-decoration: none;
 
-                            font-size: 20px;
-                            font-family: "Titillium Web", sans-serif;
-                            font-weight: 450;
+                            font-size: 19px;
+                            /* letter-spacing: 2px; */
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 400;
                             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                             position: relative;
                         }
@@ -67,6 +71,10 @@ header {
                             color: #dddddd;
                             transition: 500ms;
                         }
+
+                        & a:hover::before {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -76,9 +84,17 @@ header {
 
 main {
     & .section-banner {
-
         width: 100%;
-        height: 100vh;
+        height: 90vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: linear-gradient(
+            to right,
+            #000000 10%,
+            #3f3f3f 100%
+        ); /* Degradê do preto para um cinza escuro */
 
         & .content-banner {
             display: flex;
@@ -86,22 +102,73 @@ main {
             justify-content: center;
             align-items: start;
             height: 100%;
+            position: relative;
+            z-index: 2;
 
             padding: 50px;
 
-            background-color: #000000;
-
             & h1 {
-                font-size: 50px;
+                font-size: 80px;
+                letter-spacing: 8px;
+                font-weight: normal;
                 color: #fff;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.699);
             }
 
             & p {
-                font-size: 50px;
+                font-size: 30px;
+                letter-spacing: 25px;
                 color: #fff;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
         }
+
+        & .banner-img img {
+            height: 90vh;
+            margin: 40px 40px 0 0;
+            filter: drop-shadow(2px 2px 40px rgba(150, 150, 150, 0.301));
+            position: absolute;
+            top: 81px;
+            right: 0;
+            z-index: 1;
+        }
     }
+}
+
+.test {
+    background-color: #fff; /* Define a cor de fundo como branco */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+}
+
+.btn-whats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+
+    & img {
+        position: absolute;
+        width: 40px;
+        bottom: 10px;
+        right: 9px;
+    }
+}
+
+.btn-whats:hover {
+    background-color: #128c7e; /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho em 20% */
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza a transição */
 }
