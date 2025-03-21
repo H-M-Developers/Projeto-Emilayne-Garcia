@@ -131,6 +131,13 @@ main {
             z-index: 1;
         }
     }
+
+    & .test {
+        background-color: #fff;
+        /* Define a cor de fundo como branco */
+        height: 100vh;
+        /* Define a altura como 100% da altura da janela de visualização */
+    }
 }
 
 footer {
@@ -146,9 +153,16 @@ footer {
             & .content-01 {
                 padding-top: 20px;
                 padding-bottom: 20px;
+                margin-bottom: 50px;
 
                 border-bottom: 2px solid;
                 border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #e6e6e6, rgba(60, 74, 83, 0)) 1;
+
+                & h5,
+                p {
+                    color: #fff;
+                    font-size: 22px;
+                }
 
                 & .redes {
                     max-width: 200px;
@@ -178,54 +192,93 @@ footer {
                 }
             }
 
-            & .content-01 h5,
-            p {
+            & .content-02 {
+                background-color: #35353523;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 50%;
+                height: 180px;
+                margin: 0 auto;
+                border-radius: 25px;
+                position: relative;
+                /* Adiciona posição relativa */
+                overflow: hidden;
+                /* Garante que o conteúdo não saia dos limites */
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: inherit;
+                    backdrop-filter: blur(5px);
+                    /* Adiciona o efeito de blur no fundo */
+                    z-index: 1;
+                    /* Coloca o fundo atrás do conteúdo */
+                }
+
+                & a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 500px;
+                    margin: 0 auto;
+                    position: relative;
+                    /* Garante que o conteúdo fique acima do fundo */
+                    z-index: 2;
+                    /* Coloca o conteúdo acima do fundo */
+                    text-decoration: none;
+
+                    & img {
+                        width: 180px;
+                    }
+
+                    & p {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            & .btn-whats {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                background-color: #25d366;
                 color: #fff;
-                font-size: 22px;
+                border: none;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                transition: 0.3s;
+
+                & img {
+                    position: absolute;
+                    width: 40px;
+                    bottom: 10px;
+                    right: 9px;
+                }
+            }
+
+            & .btn-whats:hover {
+                background-color: #128c7e;
+                /* Cor ao passar o mouse */
+                transform: scale(1.2);
+                /* Aumenta o tamanho em 20% */
+                transition: transform 0.3s, background-color 0.3s;
+                /* Suaviza a transição */
             }
         }
     }
-}
-
-.test {
-    background-color: #fff;
-    /* Define a cor de fundo como branco */
-    height: 100vh;
-    /* Define a altura como 100% da altura da janela de visualização */
-}
-
-.btn-whats {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: #25d366;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: 0.3s;
-
-    & img {
-        position: absolute;
-        width: 40px;
-        bottom: 10px;
-        right: 9px;
-    }
-}
-
-.btn-whats:hover {
-    background-color: #128c7e;
-    /* Cor ao passar o mouse */
-    transform: scale(1.2);
-    /* Aumenta o tamanho em 20% */
-    transition: transform 0.3s, background-color 0.3s;
-    /* Suaviza a transição */
 }
