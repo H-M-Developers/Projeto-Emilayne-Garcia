@@ -58,6 +58,90 @@
                 </figure>
             </section>
         </section>
+
+        <section class="section-sobre section-limited" id="about">
+            <section class="content-sobre">
+                <h3>Conheça Emilayne Garcia</h3>
+
+                <div class="content-final">
+                    <div class="card01">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt rmentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                            eget sapien
+                            tinciduntfermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                            eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt
+                            fermentum
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt rmentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                        </p>
+                    </div>
+
+                    <div class="card02">
+                        <div class="image"></div>
+                    </div>
+
+                    <div class="card03">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt rmentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                            eget sapien
+                            tinciduntfermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                            eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt
+                            fermentum
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien
+                            tincidunt fermentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                            purus eget sapien
+                            tincidunt rmentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-contact section-limited" id="contact">
+            <section class="content-contact">
+                <h3>Conheça nosso espaço</h3>
+
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-slide">
+                            <img src="images/ex01.jpg">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ex02.jpg">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ex03.jpg">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ex04.jpeg">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ex05.webp">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ex06.jpg">
+                        </div>
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+            </section>
+        </section>
+
         <section class="test"></section>
     </main>
 
@@ -65,7 +149,7 @@
         <section class="section-footer section-limited">
             <section class="content-footer">
                 <div class="content-01">
-                    <h5>Fale comigo</h5>
+                    <!-- <h5>Fale comigo</h5>
                     <p>Redes Sociais:</p>
 
                     <div class="redes">
@@ -75,7 +159,7 @@
                         <a href="https://wa.me/+5569999999999" target="_blank">
                             <img src="images/whatsapp2.png" />
                         </a>
-                    </div>
+                    </div> -->
 
                     <p>
                         2025 © Emilayne Garcia. Todos os direitos reservados | CNPJ: 00.000.000/0000-00 | Rua Tupi 723 -
@@ -83,12 +167,12 @@
                     </p>
                 </div>
 
-                <div class="content-02">
+                <!-- <div class="content-02">
                     <a href="https://wa.me/+5569999999999" target="_blank">
                         <img src="images/logo_transparente.png" />
                         <p>Desenvolvido por H & M Developers</p>
                     </a>
-                </div>
+                </div> -->
 
                 <section class="btn-whats">
                     <a href="https://wa.me/+5569999999999" target="_blank">
@@ -98,6 +182,30 @@
             </section>
         </section>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("gallery-slide");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slides[slideIndex].classList.add("active");
+        }
+
+        // Automatic slideshow
+        setInterval(function () {
+            plusSlides(1);
+        }, 3000); // Change image every 3 seconds
+    </script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 
 body {
     font-family: "Standup W01 Caps Regular", sans-serif;
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 .section-limited {
@@ -132,12 +132,145 @@ main {
         }
     }
 
-    & .test {
-        background-color: #fff;
-        /* Define a cor de fundo como branco */
-        height: 100vh;
-        /* Define a altura como 100% da altura da janela de visualização */
+    & .section-sobre {
+        margin-top: 70px;
+
+        & .content-sobre {
+
+            & h3 {
+                font-size: 35px;
+                color: #000;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            & .content-final {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                & .card01 {
+
+                    & p {
+                        font-size: 15px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 22px;
+                        color: #1d1d1d;
+                    }
+                }
+
+                & .card02 {
+
+                    & .image {
+                        width: 320px;
+                        height: 480px;
+
+                        background-color: #000000;
+                        border-radius: 300px;
+                        position: relative;
+                    }
+
+                    & .image::before {
+                        content: "";
+                        width: 325px;
+                        height: 485px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        position: absolute;
+                        border-radius: 300px;
+                        z-index: -1;
+                        background: linear-gradient(90deg, #ffe99b, #ffe99b);
+                    }
+                }
+
+                & .card03 {
+
+                    & p {
+                        font-size: 15px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 22px;
+                        color: #1d1d1d;
+                    }
+                }
+            }
+        }
     }
+
+    & .section-contact {
+
+        & .content-contact {
+
+            & h3 {
+                font-size: 35px;
+                color: #000;
+                margin-bottom: 20px;
+                margin-top: 80px;
+                text-align: center;
+            }
+
+            & .gallery {
+                position: relative;
+                max-width: 100%;
+                margin: auto;
+                overflow: hidden;
+
+                & .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    & .gallery-slide {
+                        min-width: 100%;
+                        box-sizing: border-box;
+                        opacity: 0;
+                        transition: opacity 0.5s ease-in-out;
+                        /* position: absolute;
+                        top: 0;
+                        left: 0; */
+
+                        & img {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+
+                    & .gallery-slide.active {
+                        opacity: 1;
+                    }
+                }
+
+                & .prev,
+                .next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    z-index: 10;
+                }
+
+                & .prev {
+                    left: 10px;
+                }
+
+                & .next {
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+& .test {
+    background-color: #f0f0f0;
+    height: 100vh;
 }
 
 footer {
