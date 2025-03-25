@@ -58,3 +58,9 @@ function navigatePopup(direction) {
     const popupImg = document.getElementById("popup-img");
     popupImg.src = images[currentPopupIndex];
 }
+
+// Remove o preloader após o carregamento da página
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+});
