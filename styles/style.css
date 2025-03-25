@@ -131,61 +131,78 @@ main {
             z-index: 1;
         }
     }
-}
 
-.about-section {
-    width: 100%;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente os elementos */
-    justify-content: center; /* Centraliza horizontalmente os elementos */
-    gap: 50px; /* Espaçamento lateral entre os elementos */
-    padding: 50px 20px; /* Espaçamento interno (superior/inferior e lateral) */
-}
+    & .about-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* Centraliza verticalmente os elementos */
+        justify-content: center;
+        /* Centraliza horizontalmente os elementos */
+        gap: 50px;
+        /* Espaçamento lateral entre os elementos */
+        padding: 50px 20px;
+        /* Espaçamento interno (superior/inferior e lateral) */
 
-.about-mirror {
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-}
+        & .about-mirror {
+            display: flex;
+            justify-content: center;
+            /* Centraliza a imagem horizontalmente */
+            align-items: center;
+            /* Centraliza a imagem verticalmente */
 
-.mirror-frame {
-    width: 300px; /* Largura do "espelho" */
-    height: 400px; /* Altura do "espelho" */
-    border-radius: 300px 300px 0 0; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
-    border: 2px solid #000000; /* Borda preta */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-    background-color: #fff;
-}
+            & .mirror-frame {
+                width: 300px;
+                /* Largura do "espelho" */
+                height: 400px;
+                /* Altura do "espelho" */
+                border-radius: 300px 300px 0 0;
+                /* Bordas arredondadas */
+                overflow: hidden;
+                /* Garante que a imagem não ultrapasse os limites */
+                border: 2px solid #000000;
+                /* Borda preta */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                /* Sombra para profundidade */
+                background-color: #fff;
 
-.mirror-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
-}
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    /* Ajusta a imagem para cobrir o contêiner */
+                }
+            }
+        }
 
-.about-text {
-    max-width: 500px; /* Limita a largura do texto */
-    text-align: left; /* Alinha o texto à esquerda */
-    padding: 40px 20px 0 20px; /* Espaçamento interno lateral */
-}
+        & .about-text {
+            max-width: 500px;
+            /* Limita a largura do texto */
+            text-align: left;
+            /* Alinha o texto à esquerda */
+            padding: 40px 20px 0 20px;
+            /* Espaçamento interno lateral */
 
-.about-text h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
+            & h1 {
+                font-size: 36px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 20px;
+            }
 
-.about-text p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
+            & p {
+                font-size: 18px;
+                color: #555;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .section-contact {
     z-index: -10;
+
     & .content-contact {
         & h3 {
             font-size: 35px;
@@ -237,7 +254,8 @@ main {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    height: 30vh; /* Aumenta a altura do carrossel */
+    height: 30vh;
+    /* Aumenta a altura do carrossel */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +277,8 @@ main {
 }
 
 .carousel-slide img {
-    width: 250px; /* Aumenta o tamanho das imagens */
+    width: 250px;
+    /* Aumenta o tamanho das imagens */
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
@@ -267,9 +286,11 @@ main {
 }
 
 .carousel-slide.active img {
-    transform: scale(1.2); /* Aumenta ainda mais o tamanho da imagem */
+    transform: scale(1.2);
+    /* Aumenta ainda mais o tamanho da imagem */
     opacity: 1;
-    z-index: 2; /* Garante que a imagem ativa fique acima das outras */
+    z-index: 2;
+    /* Garante que a imagem ativa fique acima das outras */
 }
 
 .carousel-prev,
@@ -280,13 +301,17 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 15px; /* Ajuste para centralizar o ícone */
+    padding: 15px;
+    /* Ajuste para centralizar o ícone */
     cursor: pointer;
     z-index: 10;
-    border-radius: 50%; /* Torna os botões redondos */
+    border-radius: 50%;
+    /* Torna os botões redondos */
     font-size: 20px;
-    width: 40px; /* Define largura fixa */
-    height: 40px; /* Define altura fixa */
+    width: 40px;
+    /* Define largura fixa */
+    height: 40px;
+    /* Define altura fixa */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,13 +369,17 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 15px; /* Ajuste para centralizar o ícone */
+    padding: 15px;
+    /* Ajuste para centralizar o ícone */
     cursor: pointer;
     z-index: 1001;
-    border-radius: 50%; /* Torna os botões redondos */
+    border-radius: 50%;
+    /* Torna os botões redondos */
     font-size: 20px;
-    width: 40px; /* Define largura fixa */
-    height: 40px; /* Define altura fixa */
+    width: 40px;
+    /* Define largura fixa */
+    height: 40px;
+    /* Define altura fixa */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,13 +413,10 @@ footer {
                 margin-bottom: 50px;
 
                 border-bottom: 2px solid;
-                border-image: linear-gradient(
-                        90deg,
+                border-image: linear-gradient(90deg,
                         rgba(60, 74, 83, 0),
                         #e6e6e6,
-                        rgba(60, 74, 83, 0)
-                    )
-                    1;
+                        rgba(60, 74, 83, 0)) 1;
 
                 & h5,
                 p {
