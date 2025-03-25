@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; /* Cor de fundo do preloader */
+    background-color: #000000; /* Cor de fundo do preloader */
     display: flex;
     flex-direction: column; /* Alinha a imagem e o spinner verticalmente */
     justify-content: center;
@@ -22,7 +22,7 @@
 #preloader .preloader-logo {
     width: 500px; /* Largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 20px; /* Espaçamento entre a imagem e o spinner */
+    margin-bottom: 70px; /* Espaçamento entre a imagem e o spinner */
 }
 
 #preloader .spinner {
