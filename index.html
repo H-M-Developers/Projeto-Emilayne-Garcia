@@ -65,7 +65,7 @@
                 </section>
             </section>
 
-            <section class="about-section section-limited">
+            <section class="about-section" id="about">
                 <div class="about-mirror">
                     <div class="mirror-frame">
                         <img src="images/Sobre.jpg" alt="Emilayne Garcia" />
@@ -74,47 +74,101 @@
                 <div class="about-text">
                     <h1>Sobre Mim</h1>
                     <p>
-                        Olá, sou Emilayne Garcia, especialista em beleza e bem-estar. Minha missão é ajudar as pessoas a se sentirem confiantes e radiantes. Com anos de experiência, ofereço serviços personalizados para realçar a sua beleza natural.
+                        Olá, sou Emilayne Garcia, especialista em beleza e
+                        bem-estar. Minha missão é ajudar as pessoas a se
+                        sentirem confiantes e radiantes. Com anos de
+                        experiência, ofereço serviços personalizados para
+                        realçar a sua beleza natural.
                     </p>
                     <p>
-                        Aqui no meu espaço, cada detalhe é pensado para proporcionar conforto e qualidade. Seja bem-vindo(a) e conheça mais sobre o que posso fazer por você!
+                        Aqui no meu espaço, cada detalhe é pensado para
+                        proporcionar conforto e qualidade. Seja bem-vindo(a) e
+                        conheça mais sobre o que posso fazer por você!
                     </p>
                 </div>
             </section>
 
             <section class="section-contact" id="contact">
                 <section class="content-contact">
-                    <h3>Conheça nosso espaço</h3>
-                    <p></p>
+                    <h3>Conheça o espaço Emilayne Garcia</h3>
+                    <p>
+                        Um espaço climatizado, aconchegante e sofisticado, feito
+                        para o seu conforto e bem-estar.
+                    </p>
 
-            <section class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-slide" onclick="openPopup('images/ex01.jpg')">
-                        <img src="images/ex01.jpg" alt="Imagem 1" />
-                    </div>
-                    <div class="carousel-slide" onclick="openPopup('images/ex02.jpg')">
-                        <img src="images/ex02.jpg" alt="Imagem 2" />
-                    </div>
-                    <div class="carousel-slide" onclick="openPopup('images/ex03.jpg')">
-                        <img src="images/ex03.jpg" alt="Imagem 3" />
-                    </div>
-                    <div class="carousel-slide" onclick="openPopup('images/ex04.jpeg')">
-                        <img src="images/ex04.jpeg" alt="Imagem 4" />
-                    </div>
-                    <div class="carousel-slide" onclick="openPopup('images/ex05.webp')">
-                        <img src="images/ex05.webp" alt="Imagem 5" />
-                    </div>
-                </div>
-                <button class="carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="carousel-next" onclick="changeSlide(1)">&#10095;</button>
+                    <section class="carousel-container">
+                        <div class="carousel">
+                            <div
+                                class="carousel-slide"
+                                onclick="openPopup('images/ex01.jpg')"
+                            >
+                                <img src="images/ex01.jpg" alt="Imagem 1" />
+                            </div>
+                            <div
+                                class="carousel-slide"
+                                onclick="openPopup('images/ex02.jpg')"
+                            >
+                                <img src="images/ex02.jpg" alt="Imagem 2" />
+                            </div>
+                            <div
+                                class="carousel-slide"
+                                onclick="openPopup('images/ex03.jpg')"
+                            >
+                                <img src="images/ex03.jpg" alt="Imagem 3" />
+                            </div>
+                            <div
+                                class="carousel-slide"
+                                onclick="openPopup('images/ex04.jpeg')"
+                            >
+                                <img src="images/ex04.jpeg" alt="Imagem 4" />
+                            </div>
+                            <div
+                                class="carousel-slide"
+                                onclick="openPopup('images/ex05.webp')"
+                            >
+                                <img src="images/ex05.webp" alt="Imagem 5" />
+                            </div>
+                        </div>
+                        <button class="carousel-prev" onclick="changeSlide(-1)">
+                            &#10094;
+                        </button>
+                        <button class="carousel-next" onclick="changeSlide(1)">
+                            &#10095;
+                        </button>
+                    </section>
+                    <section class="contact-info">
+                        <p>
+                            Aqui, cada detalhe foi cuidadosamente pensado para
+                            proporcionar seu total conforto, permitindo que você
+                            relaxe enquanto realçamos sua beleza.
+                            <span class="destaque"
+                                >Venha viver essa experiência única!</span
+                            >
+                        </p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0797941956725!2d-61.9508254!3d-10.8815355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b11e9a90e75%3A0x1196283390d14d28!2sR.%20Tupi%2C%20723%20-%20Bairro%20Centro%2C%20Ji-Paran%C3%A1%20-%20RO%2C%2076900-073!5e0!3m2!1spt-BR!2sbr!4v1742907165672!5m2!1spt-BR!2sbr"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </section>
+                </section>
             </section>
 
             <!-- Pop-up container -->
             <div id="popup" class="popup">
                 <span class="popup-close" onclick="closePopup()">&times;</span>
-                <button class="popup-prev" onclick="navigatePopup(-1)">&#10094;</button>
+                <button class="popup-prev" onclick="navigatePopup(-1)">
+                    &#10094;
+                </button>
                 <img class="popup-content" id="popup-img" />
-                <button class="popup-next" onclick="navigatePopup(1)">&#10095;</button>
+                <button class="popup-next" onclick="navigatePopup(1)">
+                    &#10095;
+                </button>
             </div>
 
             <section class="test"></section>
