@@ -1,3 +1,37 @@
+// Função para revelar os elementos do banner após o carregamento com delay
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const banner = document.querySelector(".section-header");
+        if (banner) {
+            banner.classList.add("visible");
+        }
+    }, 500); // Delay de 500ms
+});
+
+// Seleciona todos os elementos com a classe "hidden"
+const hiddenElements = document.querySelectorAll(".hidden");
+
+// Função para verificar se o elemento está visível na viewport
+function revealOnScroll() {
+    hiddenElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        // Verifica se o elemento está visível
+        if (elementTop < viewportHeight - 100) {
+            setTimeout(() => {
+                element.classList.add("visible");
+            }, 300); // Delay de 300ms para cada elemento
+        }
+    });
+}
+
+// Adiciona o evento de scroll
+window.addEventListener("scroll", revealOnScroll);
+
+// Executa a função uma vez para capturar elementos visíveis no carregamento
+revealOnScroll();
+
 let currentSlide = 0;
 
 function updateCarousel() {
@@ -64,3 +98,27 @@ window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
 });
+
+let currentIndex = 0;
+
+function changeCard(direction) {
+    console.log("Botão clicado, direção:", direction); // Adicionado para depuração
+    const container = document.querySelector(".slider-container");
+    const cards = document.querySelectorAll(".slider-card");
+
+    if (cards.length === 0) return;
+
+    const cardWidth = cards[0].offsetWidth + 20; // Largura do card + gap
+    const visibleCards = Math.floor(container.offsetWidth / cardWidth);
+    const maxIndex = cards.length - visibleCards;
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = maxIndex;
+    } else if (currentIndex > maxIndex) {
+        currentIndex = 0;
+    }
+
+    container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}

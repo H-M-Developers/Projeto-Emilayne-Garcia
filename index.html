@@ -36,7 +36,7 @@
         </div>
 
         <header>
-            <section class="section-header section-limited">
+            <section class="section-header">
                 <section class="content-header">
                     <section class="content-header-left">
                         <a href="index.html">
@@ -60,7 +60,7 @@
 
         <main>
             <section class="section-banner">
-                <section class="content-banner">
+                <section class="content-banner hidden">
                     <h1>EMILAYNE GARCIA</h1>
                     <p>BEAUTY SPACE</p>
                 </section>
@@ -71,7 +71,7 @@
                 </section>
             </section>
 
-            <section class="about-section" id="about">
+            <!-- <section class="about-section" id="about">
                 <div class="about-mirror">
                     <div class="mirror-frame">
                         <img src="images/Sobre.jpg" alt="Emilayne Garcia" />
@@ -92,17 +92,145 @@
                         conheça mais sobre o que posso fazer por você!
                     </p>
                 </div>
+            </section> -->
+
+            <section class="sobre" id="about">
+                <div class="sobre-container">
+                    <div class="sobre-text hidden">
+                        <h2>Conheça Emilayne Garcia</h2>
+                        <p>
+                            Olá, sou Emilayne Garcia, especialista em beleza e
+                            bem-estar. Minha missão é ajudar as pessoas a se
+                            sentirem confiantes e radiantes. Com anos de
+                            experiência, ofereço serviços personalizados para
+                            realçar a sua beleza natural.
+                        </p>
+                        <p>
+                            Aqui no meu espaço, cada detalhe é pensado para
+                            proporcionar conforto e qualidade. Seja bem-vindo(a)
+                            e conheça mais sobre o que posso fazer por você!
+                        </p>
+                    </div>
+                    <div class="sobre-image">
+                        <img src="images/imgsobre.png" alt="Emilayne Garcia" />
+                    </div>
+                </div>
+                <section class="slider-carousel">
+                    <button class="slider-prev" onclick="changeCard(-1)">
+                        &#10094;
+                    </button>
+                    <div class="slider-container">
+                        <a href="">
+                            <div class="slider-card">
+                                <div class="slider-image">
+                                    <img
+                                        src="images/micropigmentação.jpg"
+                                        alt="Micropigmentação"
+                                    />
+                                </div>
+                                <h3>Micropigmentação</h3>
+                                <p>
+                                    Procedimento semipermanente que realça a
+                                    beleza natural através da aplicação de
+                                    pigmentos na pele. Com técnica avançada e
+                                    resultados naturais, proporciona praticidade
+                                    e harmonia facial.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="slider-card">
+                                <div class="slider-image">
+                                    <img
+                                        src="images/brow-lamination.jpg"
+                                        alt="Brow Lamination"
+                                    />
+                                </div>
+                                <h3>Brow Lamination</h3>
+                                <p>
+                                    Procedimento que alinha e define os fios das
+                                    sobrancelhas, proporcionando um efeito de
+                                    volume e preenchimento natural. Ideal para
+                                    quem deseja sobrancelhas mais modeladas e
+                                    simétricas, sem a necessidade de maquiagem
+                                    diária.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="slider-card">
+                                <div class="slider-image">
+                                    <img
+                                        src="images/brow-lamination.jpg"
+                                        alt="Brow Lamination"
+                                    />
+                                </div>
+                                <h3>Brow Lamination</h3>
+                                <p>
+                                    Procedimento que alinha e define os fios das
+                                    sobrancelhas, proporcionando um efeito de
+                                    volume e preenchimento natural. Ideal para
+                                    quem deseja sobrancelhas mais modeladas e
+                                    simétricas, sem a necessidade de maquiagem
+                                    diária.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="slider-card">
+                                <div class="slider-image">
+                                    <img
+                                        src="images/brow-lamination.jpg"
+                                        alt="Brow Lamination"
+                                    />
+                                </div>
+                                <h3>Brow Lamination</h3>
+                                <p>
+                                    Procedimento que alinha e define os fios das
+                                    sobrancelhas, proporcionando um efeito de
+                                    volume e preenchimento natural. Ideal para
+                                    quem deseja sobrancelhas mais modeladas e
+                                    simétricas, sem a necessidade de maquiagem
+                                    diária.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="slider-card">
+                                <div class="slider-image">
+                                    <img
+                                        src="images/brow-lamination.jpg"
+                                        alt="Brow Lamination"
+                                    />
+                                </div>
+                                <h3>Brow Lamination</h3>
+                                <p>
+                                    Procedimento que alinha e define os fios das
+                                    sobrancelhas, proporcionando um efeito de
+                                    volume e preenchimento natural. Ideal para
+                                    quem deseja sobrancelhas mais modeladas e
+                                    simétricas, sem a necessidade de maquiagem
+                                    diária.
+                                </p>
+                            </div>
+                        </a>
+                        <!-- Adicione mais cards aqui -->
+                    </div>
+                    <button class="slider-next" onclick="changeCard(1)">
+                        &#10095;
+                    </button>
+                </section>
             </section>
 
             <section class="section-contact" id="contact">
-                <section class="content-contact">
+                <section class="content-contact hidden">
                     <h3>Conheça o espaço Emilayne Garcia</h3>
                     <p>
                         Um espaço climatizado, aconchegante e sofisticado, feito
                         para o seu conforto e bem-estar.
                     </p>
 
-                    <section class="carousel-container">
+                    <section class="carousel-container hidden">
                         <div class="carousel">
                             <div
                                 class="carousel-slide"
@@ -142,7 +270,7 @@
                             &#10095;
                         </button>
                     </section>
-                    <section class="contact-info">
+                    <section class="contact-info hidden">
                         <p>
                             Aqui, cada detalhe foi cuidadosamente pensado para
                             proporcionar seu total conforto, permitindo que você
@@ -153,6 +281,7 @@
                         </p>
 
                         <iframe
+                            class="map hidden"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0797941956725!2d-61.9508254!3d-10.8815355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b11e9a90e75%3A0x1196283390d14d28!2sR.%20Tupi%2C%20723%20-%20Bairro%20Centro%2C%20Ji-Paran%C3%A1%20-%20RO%2C%2076900-073!5e0!3m2!1spt-BR!2sbr!4v1742907165672!5m2!1spt-BR!2sbr"
                             width="600"
                             height="450"
@@ -167,7 +296,7 @@
 
             <section class="section-bottom-services">
                 <section class="content-bottom-services">
-                    <a href="services.html">
+                    <a href="services.html" class="hidden">
                         <p>nossos serviços</p>
                     </a>
                 </section>
