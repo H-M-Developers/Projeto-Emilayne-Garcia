@@ -6,6 +6,10 @@
     font-family: "Standup W01 Caps Regular", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Preloader Styles */
 #preloader {
     position: fixed;
@@ -307,13 +311,14 @@ header {
 }
 
 .slider-section {
-    bottom: 100px;
-    left: 200px;
+    flex-shrink: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start; /* Alinha os itens ao topo */
     gap: 20px;
     padding: 50px 20px;
+    margin: 100px 200px; /* Substitui bottom e left */
     /* background-color: #f9f9f9; */
 }
 
