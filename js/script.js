@@ -122,3 +122,22 @@ function changeCard(direction) {
 
     container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 }
+
+// Animação de fade-in para os cards de serviços
+const cards = document.querySelectorAll(".card-links");
+
+function fadeInOnScroll() {
+    cards.forEach((card) => {
+        const cardTop = card.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        if (cardTop < viewportHeight - 100) {
+            card.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", fadeInOnScroll);
+
+// Executa a função no carregamento inicial
+fadeInOnScroll();
