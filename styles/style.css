@@ -380,7 +380,7 @@ header {
     width: 100%;
     height: 105vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/section-links-bg.jpg");
+        url("../assets/section-links-bg.webp");
     background-size: cover;
     background-position: center;
     border-top: 2px solid #ffe0a7;
@@ -512,7 +512,7 @@ header {
 /* --------------------------SECAO CONTATOS--------------------------  */
 .section-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.76), rgb(0, 0, 0)),
-        url("../images/ex09.jpg");
+        url("../assets/ex09.webp");
     background-size: contain;
     background-position: center;
     z-index: -10;
