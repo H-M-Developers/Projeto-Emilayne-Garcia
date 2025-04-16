@@ -384,6 +384,7 @@ header {
         url("../assets/section-links-bg.webp");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     border-top: 2px solid #ffe0a7;
 
     & h1 {
@@ -514,8 +515,10 @@ header {
 .section-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.76), rgb(0, 0, 0)),
         url("../assets/ex09.webp");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: -10;
     border-top: 2px solid #ffe0a7;
     border-bottom: 2px solid #ffe0a7;
@@ -556,12 +559,103 @@ header {
     text-align: center;
 }
 
-.section-contact .contact-info iframe {
-    width: 70%;
-    height: 400px;
+.section-contact .section-map div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.section-contact .section-map div iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-contact .section-map {
+    background-color: rgba(11, 11, 11, 0.142);
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-contact .content-contact .section-map .contatos-direto {
+    width: 400px;
+    margin-left: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section-contact .content-contact .section-map .contatos-direto div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-contact .content-contact .section-map .contatos-direto div img {
+    width: 35px;
+    height: 35px;
+}
+
+.section-contact .content-contact .section-map .contatos-direto div p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0;
+    width: 80%;
+    text-align: left;
+}
+
+.section-contact .content-contact .section-map .contatos-direto div p a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section-contact .content-contact .section-map .contatos-direto div .whatss a {
+    text-decoration: none;
+    color: #075E54;
+}
+
+.section-contact .content-contact .section-map .icons-link {
+    width: 165px;
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section-contact .content-contact .section-map .icons-link .icon-01 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact .content-contact .section-map .icons-link .icon-02 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact .content-contact .section-map .icons-link .icon-01 img,
+.section-contact .content-contact .section-map .icons-link .icon-02 img {
+    width: 30px;
+    height: 30px;
 }
 
 .carousel-container {
@@ -724,7 +818,7 @@ header {
 
 /* --------------------------SECAO RODAPÉ--------------------------  */
 footer {
-    background-color: #ffffff;
+    background-color: #000000f5;
 }
 
 .section-footer .content-footer {
@@ -734,22 +828,18 @@ footer {
 }
 
 .section-footer .content-footer .content-01 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 2px solid;
-    border-image: linear-gradient(
-            90deg,
+    border-image: linear-gradient(90deg,
             rgba(60, 74, 83, 0.678),
             #e6e6e6,
-            rgba(60, 74, 83, 0.582)
-        )
-        1;
+            rgba(60, 74, 83, 0.582)) 1;
 }
 
-.section-footer .content-footer .content-01 h5,
 .section-footer .content-footer .content-01 p {
-    color: #000000;
+    color: #dddddd;
     font-size: 22px;
 }
 
@@ -765,19 +855,19 @@ footer {
 }
 
 .section-footer .content-footer .content-01 .redes a {
-    color: #000000;
+    color: #dddddd;
     width: 80px;
 }
 
 .section-footer .content-footer .content-01 .redes a img {
-    color: #000000;
+    color: #dddddd;
     width: 80px;
 }
 
 .section-footer .content-footer .content-01 p {
     font-size: 15px;
     margin-top: 10px;
-    color: #000000;
+    color: #dddddd;
 }
 
 .section-footer .content-footer a {
@@ -788,7 +878,7 @@ footer {
 }
 
 .section-footer .content-footer a p {
-    color: #272727;
+    color: #dddddd;
     padding-top: 0;
 }
 
